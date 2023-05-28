@@ -27,50 +27,49 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   void dispose() {
-    scrollController.dispose;
+    scrollController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final menuController = MenuClickController(
-      customScrollController: scrollController,  
+      customScrollController: scrollController,
       customKeySection1: keySection1,
-      customKeySection2: keySection2, 
-      customKeySection3: keySection3, 
-      customKeySection4: keySection4, 
-      customKeySection5: keySection5, 
+      customKeySection2: keySection2,
+      customKeySection3: keySection3,
+      customKeySection4: keySection4,
+      customKeySection5: keySection5,
     );
 
     return Scaffold(
-       floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            scrollController.animateTo(
-              0,
-              duration: const Duration(milliseconds: 500),
-              curve: Curves.easeInOut,
-            );
-          },
-        ),
-      body: Column(
-          children: [
-            CustomMenu( onMenuClick: menuController.onMenuClick),
-            Expanded(
-              child: SingleChildScrollView(
-                controller: scrollController,
-                child:  Column(
-                  children: [
-                  HomeScreen(key: keySection1),
-                  AboutScreen(key: keySection2), 
-                  WorkScreen(key: keySection3),
-                  BlogScreen(key: keySection4),
-                  ContactScreen(key: keySection5), 
-                ]),
-              ),
-            ),
-          ],
-        ));
-  } 
+        //  floatingActionButton: FloatingActionButton(
+        //     onPressed: () {
+        //       scrollController.animateTo(
+        //         0,
+        //         duration: const Duration(milliseconds: 500),
+        //         curve: Curves.easeInOut,
+        //       );
+        //     },
+        //   ),
 
-  
+        body: Column(
+      children: [
+        CustomMenu(onMenuClick: menuController.onMenuClick),
+        Expanded(
+          child: SingleChildScrollView(
+            controller: scrollController,
+            child: Column(children: [
+              HomeScreen(key: keySection1),
+              AboutScreen(key: keySection2),
+              WorkScreen(key: keySection3),
+              BlogScreen(key: keySection4),
+              ContactScreen(key: keySection5),
+          //    CustomBottomNavigationBar()
+            ]),
+          ),
+        ),
+      ],
+    ));
+  }
 }

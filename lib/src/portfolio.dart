@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/src/core/themeData/custom_theme_data.dart';
 import 'package:portfolio/src/screen/about/about_screen.dart';
 import 'package:portfolio/src/screen/blog/blog_screen.dart';
 import 'package:portfolio/src/screen/contact/contact_screen.dart';
@@ -14,7 +15,7 @@ class Portfolio extends StatelessWidget {
     return  MaterialApp(
           title: 'Portfolio',
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(),
+          theme: customThemeData(), 
           home: const MainScreen(),
           routes: {
               MainScreen.route: (context) => const MainScreen(),
