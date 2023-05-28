@@ -1,22 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/controller/menu_click_controller.dart';
 import 'package:portfolio/src/core/widgets/custom_menu.dart';
+import 'package:portfolio/src/screen/about/about_screen.dart';
+import 'package:portfolio/src/screen/blog/blog_screen.dart';
+import 'package:portfolio/src/screen/contact/contact_screen.dart';
+import 'package:portfolio/src/screen/home/home_screen.dart';
+import 'package:portfolio/src/screen/work/work_screen.dart';
 
-class Main extends StatefulWidget {
-  const Main({Key? key}) : super(key: key);
+class MainScreen extends StatefulWidget {
+  const MainScreen({Key? key}) : super(key: key);
 
-  static const route = 'HomePage';
+  static const route = 'MainScreen';
 
   @override
-  State<Main> createState() => _MainState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainState extends State<Main> {
+class _MainScreenState extends State<MainScreen> {
   final scrollController = ScrollController();
 
   final keySection1 = GlobalKey();
   final keySection2 = GlobalKey();
   final keySection3 = GlobalKey();
+  final keySection4 = GlobalKey();
+  final keySection5 = GlobalKey();
 
   @override
   void dispose() {
@@ -31,6 +38,8 @@ class _MainState extends State<Main> {
       customKeySection1: keySection1,
       customKeySection2: keySection2, 
       customKeySection3: keySection3, 
+      customKeySection4: keySection4, 
+      customKeySection5: keySection5, 
     );
 
     return Scaffold(
@@ -49,10 +58,13 @@ class _MainState extends State<Main> {
             Expanded(
               child: SingleChildScrollView(
                 controller: scrollController,
-                child: const Column(
+                child:  Column(
                   children: [
-                //  key: keySection1
-
+                  HomeScreen(key: keySection1),
+                  AboutScreen(key: keySection2), 
+                  WorkScreen(key: keySection3),
+                  BlogScreen(key: keySection4),
+                  ContactScreen(key: keySection5), 
                 ]),
               ),
             ),

@@ -4,11 +4,15 @@ class MenuClickController {
   final GlobalKey customKeySection1;
   final GlobalKey customKeySection2;
   final GlobalKey customKeySection3;
+  final GlobalKey customKeySection4;
+  final GlobalKey customKeySection5;
   final ScrollController customScrollController;
   MenuClickController({
     required this.customKeySection1,
     required this.customKeySection2,
     required this.customKeySection3,
+    required this.customKeySection4,
+    required this.customKeySection5,
     required this.customScrollController,
   });
 
@@ -27,6 +31,14 @@ class MenuClickController {
       case 3:
         renderBox =
             customKeySection3.currentContext!.findRenderObject() as RenderBox;
+        break;
+      case 4:
+        renderBox =
+            customKeySection4.currentContext!.findRenderObject() as RenderBox;
+        break;
+      case 5:
+        renderBox =
+            customKeySection5.currentContext!.findRenderObject() as RenderBox;
         break;
       default:
         throw Exception();
