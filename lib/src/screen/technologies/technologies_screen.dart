@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/core/colors/app_colors.dart';
 
-class BlogScreen extends StatelessWidget {
+class TechnologiesScreen extends StatelessWidget {
 
-  const BlogScreen({ Key? key }) : super(key: key);
+  const TechnologiesScreen({ Key? key }) : super(key: key);
 
   static const route = 'BlogScreen';
 

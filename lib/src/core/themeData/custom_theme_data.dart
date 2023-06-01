@@ -5,7 +5,6 @@ import 'package:portfolio/src/core/colors/app_colors.dart';
 ThemeData customThemeData() {
   return ThemeData(
 
-        
     textTheme: const TextTheme(
       headlineMedium: TextStyle(
         fontFamily: 'PermanentMarker',
@@ -20,6 +19,7 @@ ThemeData customThemeData() {
         fontWeight: FontWeight.w600,
         color: AppColors.white
       ),
+
       // titleMedium: TextStyle(
       //  fontFamily: 'Montserrat',
       //   fontSize: 14,

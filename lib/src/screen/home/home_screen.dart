@@ -28,11 +28,15 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          Text('Charleston Ribeiro',
-              style: Theme.of(context).textTheme.headlineMedium),
-          Text(
-            'Eu sou um desenvolvedor mobile flutter',
-            style: Theme.of(context).textTheme.headlineSmall),
+          Flexible(
+            child: Text('Charleston Ribeiro',
+                style: Theme.of(context).textTheme.headlineMedium),
+          ),
+          Flexible(
+            child: Text(
+              'Eu sou um desenvolvedor mobile Flutter',
+              style: Theme.of(context).textTheme.headlineSmall),
+          ),
   
         ],
       ),

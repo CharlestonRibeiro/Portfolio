@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/src/controller/menu_click_controller.dart';
 import 'package:portfolio/src/core/widgets/custom_menu.dart';
 import 'package:portfolio/src/screen/about/about_screen.dart';
-import 'package:portfolio/src/screen/blog/blog_screen.dart';
+import 'package:portfolio/src/screen/technologies/technologies_screen.dart';
 import 'package:portfolio/src/screen/contact/contact_screen.dart';
 import 'package:portfolio/src/screen/home/home_screen.dart';
 import 'package:portfolio/src/screen/work/work_screen.dart';
@@ -62,8 +62,8 @@ class _MainScreenState extends State<MainScreen> {
             child: Column(children: [
               HomeScreen(key: keySection1),
               AboutScreen(key: keySection2),
-              WorkScreen(key: keySection3),
-              BlogScreen(key: keySection4),
+              TechnologiesScreen(key: keySection3),
+              WorkScreen(key: keySection4),
               ContactScreen(key: keySection5),
           //    CustomBottomNavigationBar()
             ]),
