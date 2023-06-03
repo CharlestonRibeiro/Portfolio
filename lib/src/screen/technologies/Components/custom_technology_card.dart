@@ -40,13 +40,11 @@ class CustomTechnologyCard extends StatelessWidget {
               SizedBox(
                 height: context.percentHeight(0.01),
               ),
-              Expanded(
-                child: Text(
-                  customText,
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleSmall
-                ),
+              Text(
+                customText,
+                style: Theme.of(context)
+                    .textTheme
+                    .titleSmall
               ),
             ],
           ),
