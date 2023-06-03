@@ -1,16 +1,15 @@
-# portfolio
+# Meu Portfólio
 
-A new Flutter project.
+Bem-vindo ao meu portfólio. Aqui estão algumas capturas de tela do meu trabalho.
 
-## Getting Started
+## Capturas de tela
 
-This project is a starting point for a Flutter application.
+![Imagem 1](https://github.com/CharlestonRibeiro/Portfolio/blob/main/assets/imgReadme/1.png)
+![Imagem 2](https://github.com/CharlestonRibeiro/Portfolio/blob/main/assets/imgReadme/2.png)
+![Imagem 3](https://github.com/CharlestonRibeiro/Portfolio/blob/main/assets/imgReadme/3.png)
+![Imagem 4](https://github.com/CharlestonRibeiro/Portfolio/blob/main/assets/imgReadme/4.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Contato
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Se você tiver alguma pergunta ou comentário, sinta-se à vontade para me contatar.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
