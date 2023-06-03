@@ -20,12 +20,12 @@ ThemeData customThemeData() {
         color: AppColors.white
       ),
 
-      // titleMedium: TextStyle(
-      //  fontFamily: 'Montserrat',
-      //   fontSize: 14,
-      //   fontWeight: FontWeight.w500,
-      //   color: CustomColors.description
-      // ),
+      titleMedium: TextStyle(
+       fontFamily: 'Montserrat',
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        color: AppColors.black
+      ),
       // titleSmall: TextStyle(
       //  fontFamily: 'Montserrat',
       //   fontSize: 12,
