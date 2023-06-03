@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/colors/app_colors.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class CustomCardSkillsData extends StatelessWidget {
@@ -20,13 +20,14 @@ class CustomCardSkillsData extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .titleSmall
+             
         ),
         SizedBox(
           width: context.percentWidth(.5981),
           child: LinearProgressIndicator(
             backgroundColor: AppColors.white,
             valueColor:
-                const AlwaysStoppedAnimation<Color>(AppColors.gray),
+                const AlwaysStoppedAnimation<Color>(AppColors.black),
             value: value,
           ),
         ),

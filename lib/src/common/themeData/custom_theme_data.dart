@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/colors/app_colors.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 
 ThemeData customThemeData() {
   return ThemeData(

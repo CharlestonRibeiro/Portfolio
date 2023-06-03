@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/images/app_images.dart';
+import 'package:portfolio/src/common/images/app_images.dart';
 import 'package:portfolio/src/screen/technologies/components/custom_technology_card.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
@@ -27,8 +27,8 @@ class CustomTechnologyList extends StatelessWidget {
           width: context.percentWidth(.03),
         ),
         const CustomTechnologyCard(
-          customImage: AppImages.github,
-          customText: 'GitHub',
+          customImage: AppImages.git,
+          customText: 'Git',
         ),
         SizedBox(
           width: context.percentWidth(.03),

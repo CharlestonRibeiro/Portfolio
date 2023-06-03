@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/themeData/custom_theme_data.dart';
+import 'package:portfolio/src/common/themeData/custom_theme_data.dart';
 import 'package:portfolio/src/screen/about/about_screen.dart';
 import 'package:portfolio/src/screen/contact/contact_screen.dart';
 import 'package:portfolio/src/screen/home/home_screen.dart';

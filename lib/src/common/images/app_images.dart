@@ -10,4 +10,7 @@ class AppImages {
   static const dart = 'assets/images/dart.png';
   static const flutterPNG = 'assets/images/flutter.png';
   static const github = 'assets/images/github.png';
+  static const git = 'assets/images/git.png';
+  static const linkedin = 'assets/images/linkedin.png';
+  static const gmail = 'assets/images/gmail.png';
 }

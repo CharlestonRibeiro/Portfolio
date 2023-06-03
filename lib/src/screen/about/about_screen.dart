@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/colors/app_colors.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class AboutScreen extends StatelessWidget {
@@ -12,7 +12,7 @@ class AboutScreen extends StatelessWidget {
     return Container(
       height: context.percentHeight(.8145),
       width: double.infinity,
-      color: AppColors.gray,
+      color: AppColors.grey,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,7 +31,7 @@ class AboutScreen extends StatelessWidget {
               Container(
                 width: 200,
                 height: 200,
-                color: AppColors.white,
+                color: AppColors.grey2,
               ),
             ],
           ),

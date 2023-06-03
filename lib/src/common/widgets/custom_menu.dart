@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/colors/app_colors.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 
 class CustomMenu extends StatelessWidget {
 
@@ -25,7 +25,7 @@ class CustomMenu extends StatelessWidget {
                 child:  Text(
                   'INICIO',
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24)
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24, color: AppColors.grey2)
                 ),
               ),
             ),
@@ -34,7 +34,7 @@ class CustomMenu extends StatelessWidget {
                 child:  Text(
                   'SOBRE MIM',
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24)
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24, color: AppColors.grey2)
                 ),
               ),
             ),
@@ -43,7 +43,7 @@ class CustomMenu extends StatelessWidget {
                 child:  Text(
                   'TECNOLOGIAS',
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24)
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24, color: AppColors.grey2)
                 ),
               ),
             ),
@@ -52,7 +52,7 @@ class CustomMenu extends StatelessWidget {
                 child:  Text(
                   'TRABALHOS',
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24)
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24, color: AppColors.grey2)
                 ),
               ),
             ),
@@ -61,7 +61,7 @@ class CustomMenu extends StatelessWidget {
                 child:  Text(
                   'CONTATOS',
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24)
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontSize: 24, color: AppColors.grey2)
                 ),
               ),
             ),

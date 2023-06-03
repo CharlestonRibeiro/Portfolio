@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/controller/menu_click_controller.dart';
-import 'package:portfolio/src/core/widgets/custom_menu.dart';
+import 'package:portfolio/src/common/widgets/custom_menu.dart';
 import 'package:portfolio/src/screen/about/about_screen.dart';
 import 'package:portfolio/src/screen/technologies/technologies_screen.dart';
 import 'package:portfolio/src/screen/contact/contact_screen.dart';
@@ -43,16 +43,6 @@ class _MainScreenState extends State<MainScreen> {
     );
 
     return Scaffold(
-        //  floatingActionButton: FloatingActionButton(
-        //     onPressed: () {
-        //       scrollController.animateTo(
-        //         0,
-        //         duration: const Duration(milliseconds: 500),
-        //         curve: Curves.easeInOut,
-        //       );
-        //     },
-        //   ),
-
         body: Column(
       children: [
         CustomMenu(onMenuClick: menuController.onMenuClick),
@@ -65,7 +55,6 @@ class _MainScreenState extends State<MainScreen> {
               TechnologiesScreen(key: keySection3),
               WorkScreen(key: keySection4),
               ContactScreen(key: keySection5),
-          //    CustomBottomNavigationBar()
             ]),
           ),
         ),

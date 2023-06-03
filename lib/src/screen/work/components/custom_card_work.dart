@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/colors/app_colors.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class CustomCardWork extends StatelessWidget {
@@ -23,7 +23,7 @@ class CustomCardWork extends StatelessWidget {
         ),
         child: Padding(
           padding: EdgeInsets.all(context.percentWidth(.02)),
-          child: Expanded(
+
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,7 +56,7 @@ class CustomCardWork extends StatelessWidget {
               ],
             ),
           ),
-        ),
+
       ),
     );
   }

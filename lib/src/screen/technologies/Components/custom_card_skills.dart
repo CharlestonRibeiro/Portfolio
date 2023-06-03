@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/screen/technologies/components/custom_card_skills_data.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
@@ -8,10 +9,11 @@ class CustomCardSkills extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: AppColors.grey2,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(28), // Define o raio da borda
         ),
-      child: Expanded(
+  
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
@@ -35,7 +37,7 @@ class CustomCardSkills extends StatelessWidget {
               const CustomCardSkillsData(text: 'Django', value: 0.40),
             ],
           ),
-        ),
+ 
       ),
     );
   }

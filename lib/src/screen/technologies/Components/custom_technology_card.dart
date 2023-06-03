@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class CustomTechnologyCard extends StatelessWidget {
@@ -16,6 +17,7 @@ class CustomTechnologyCard extends StatelessWidget {
       width: context.percentWidth(0.123),
       
       child: Card(
+        color: AppColors.grey2,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(28), // Define o raio da borda
         ),

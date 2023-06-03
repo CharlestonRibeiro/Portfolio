@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/core/colors/app_colors.dart';
+import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/screen/technologies/components/custom_card_skills.dart';
 import 'package:portfolio/src/screen/technologies/components/custom_technology_list.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
@@ -23,7 +23,7 @@ class TechnologiesScreen extends StatelessWidget {
             Align(
                 alignment: Alignment.centerLeft,
                 child: Text('Tecnologias que Conheço',
-                    style: Theme.of(context).textTheme.headlineSmall)),
+                    style: Theme.of(context).textTheme.headlineMedium)),
             SizedBox(
               height: context.percentHeight(.02),
             ),
@@ -34,7 +34,7 @@ class TechnologiesScreen extends StatelessWidget {
             Align(
                 alignment: Alignment.centerLeft,
                 child: Text('Habilidades e Competências',
-                    style: Theme.of(context).textTheme.headlineSmall)),
+                    style: Theme.of(context).textTheme.headlineMedium)),
             SizedBox(
               height: context.percentHeight(.02),
             ),
