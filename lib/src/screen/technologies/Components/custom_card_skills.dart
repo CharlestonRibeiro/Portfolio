@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/screen/technologies/Components/custom_card_skills_data.dart';
+import 'package:portfolio/src/screen/technologies/components/custom_card_skills_data.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class CustomCardSkills extends StatelessWidget {

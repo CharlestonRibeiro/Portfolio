@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/core/images/app_images.dart';
-import 'package:portfolio/src/screen/technologies/Components/custom_technology_card.dart';
+import 'package:portfolio/src/screen/technologies/components/custom_technology_card.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class CustomTechnologyList extends StatelessWidget {
