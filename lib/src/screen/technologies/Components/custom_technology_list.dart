@@ -8,50 +8,52 @@ class CustomTechnologyList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        const CustomTechnologyCard(
-          customImage: AppImages.flutterPNG,
-          customText: 'Flutter',
-        ),
-        SizedBox(
-          width: context.percentWidth(.03),
-        ),
-        const CustomTechnologyCard(
-          customImage: AppImages.dart,
-          customText: 'Dart',
-        ),
-        SizedBox(
-          width: context.percentWidth(.03),
-        ),
-        const CustomTechnologyCard(
-          customImage: AppImages.git,
-          customText: 'Git',
-        ),
-        SizedBox(
-          width: context.percentWidth(.03),
-        ),
-        const CustomTechnologyCard(
-          customImage: AppImages.firebase,
-          customText: 'Firebase',
-        ),
-        SizedBox(
-          width: context.percentWidth(.03),
-        ),
-        const CustomTechnologyCard(
-          customImage: AppImages.mysql,
-          customText: 'MYSQL',
-        ),
-        SizedBox(
-          width: context.percentWidth(.03),
-        ),
-        const CustomTechnologyCard(
-          customImage: AppImages.django,
-          customText: 'Django',
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const CustomTechnologyCard(
+            customImage: AppImages.flutterPNG,
+            customText: 'Flutter',
+          ),
+          SizedBox(
+            width: context.percentWidth(.025),
+          ),
+          const CustomTechnologyCard(
+            customImage: AppImages.dart,
+            customText: 'Dart',
+          ),
+          SizedBox(
+            width: context.percentWidth(.025),
+          ),
+          const CustomTechnologyCard(
+            customImage: AppImages.git,
+            customText: 'Git',
+          ),
+          SizedBox(
+            width: context.percentWidth(.025),
+          ),
+          const CustomTechnologyCard(
+            customImage: AppImages.firebase,
+            customText: 'Firebase',
+          ),
+          SizedBox(
+            width: context.percentWidth(.025),
+          ),
+          const CustomTechnologyCard(
+            customImage: AppImages.mysql,
+            customText: 'MYSQL',
+          ),
+          SizedBox(
+            width: context.percentWidth(.025),
+          ),
+          const CustomTechnologyCard(
+            customImage: AppImages.django,
+            customText: 'Django',
+          ),
+        ],
+      ),
     );
   }
 }

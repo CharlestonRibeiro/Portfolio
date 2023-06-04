@@ -10,35 +10,43 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double size = MediaQuery.of(context).size.width * 0.3;
+
     return Container(
       height: context.percentHeight(.8145),
       width: double.infinity,
       color: AppColors.black,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            width: context.percentWidth(250 / 1440),
-            height: context.percentHeight(250 / 800),
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage(AppImages.myPhoto),
-                fit: BoxFit.cover,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              width: size,
+              height: size,
+              child: ClipOval(
+                child: Image.asset(
+                  AppImages.myPhoto,
+                  width: size,
+                  height: size,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
-          ),
-          Flexible(
-            child: Text('Charleston Ribeiro',
-                style: Theme.of(context).textTheme.headlineMedium),
-          ),
-          Flexible(
-            child: Text(
-              'Eu sou um desenvolvedor mobile Flutter',
-              style: Theme.of(context).textTheme.headlineSmall),
-          ),
-  
-        ],
+            Center(
+              child: Flexible(
+                child: Text('Charleston Ribeiro',
+                    style: Theme.of(context).textTheme.headlineMedium),
+              ),
+            ),
+            Center(
+              child: Flexible(
+                child: Text('Desenvolvedor mobile Flutter',
+                    style: Theme.of(context).textTheme.headlineSmall),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

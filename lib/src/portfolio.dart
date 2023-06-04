@@ -6,15 +6,21 @@ import 'package:portfolio/src/screen/home/home_screen.dart';
 import 'package:portfolio/src/screen/main/main_screen.dart';
 import 'package:portfolio/src/screen/technologies/technologies_screen.dart';
 import 'package:portfolio/src/screen/work/work_screen.dart';
+import 'package:device_preview/device_preview.dart';
+
 
 class Portfolio extends StatelessWidget {
   const Portfolio({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return  MaterialApp(      
           title: 'Portfolio',
           debugShowCheckedModeBanner: false,
+          
+          locale: DevicePreview.locale(context),
+          builder: DevicePreview.appBuilder,
+
           theme: customThemeData(), 
           home: const MainScreen(),
           routes: {

@@ -17,34 +17,32 @@ class TechnologiesScreen extends StatelessWidget {
       color: AppColors.black,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.04)),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Align(
-                alignment: Alignment.centerLeft,
-                child: Text('Tecnologias que Conheço',
-                    style: Theme.of(context).textTheme.headlineMedium)),
-            SizedBox(
-              height: context.percentHeight(.02),
-            ),
-            //          const CustomTechnologyList(),
-            const CustomTechnologyList(),
-            SizedBox(
-              height: context.percentHeight(.08),
-            ),
-            Align(
-                alignment: Alignment.centerLeft,
-                child: Text('Habilidades e Competências',
-                    style: Theme.of(context).textTheme.headlineMedium)),
-            SizedBox(
-              height: context.percentHeight(.02),
-            ),
-            const CustomCardSkills(),
-            //           const CustomCardSkills(),
-            SizedBox(
-              height: context.percentHeight(.02),
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Tecnologias que Conheço',
+                  style: Theme.of(context).textTheme.headlineMedium),
+              SizedBox(
+                height: context.percentHeight(.02),
+              ),
+        
+              const CustomTechnologyList(),
+        
+              SizedBox(
+                height: context.percentHeight(.08),
+              ),
+              Text('Habilidades e Competências',
+                  style: Theme.of(context).textTheme.headlineMedium),
+              SizedBox(
+                height: context.percentHeight(.02),
+              ),
+              const CustomCardSkills(),
+              SizedBox(
+                height: context.percentHeight(.02),
+              ),
+            ],
+          ),
         ),
       ),
     );
