@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/common/colors/app_colors.dart';
 import 'package:portfolio/src/screen/technologies/components/custom_card_skills.dart';
-import 'package:portfolio/src/screen/technologies/components/custom_technology_list.dart';
 import 'package:portfolio/src/services/size_extensions.dart';
 
 class TechnologiesScreen extends StatelessWidget {
@@ -27,7 +26,8 @@ class TechnologiesScreen extends StatelessWidget {
             SizedBox(
               height: context.percentHeight(.02),
             ),
-            const CustomTechnologyList(),
+            //          const CustomTechnologyList(),
+            const CustomCardSkills(),
             SizedBox(
               height: context.percentHeight(.08),
             ),
@@ -39,6 +39,7 @@ class TechnologiesScreen extends StatelessWidget {
               height: context.percentHeight(.02),
             ),
             const CustomCardSkills(),
+            //           const CustomCardSkills(),
             SizedBox(
               height: context.percentHeight(.02),
             ),

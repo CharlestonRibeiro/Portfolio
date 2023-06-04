@@ -19,7 +19,7 @@ class CustomTechnologyCard extends StatelessWidget {
       child: Card(
         color: AppColors.grey2,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(28), // Define o raio da borda
+          borderRadius: BorderRadius.circular(28), 
         ),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
